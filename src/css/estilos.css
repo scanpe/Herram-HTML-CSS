@@ -1,0 +1,1370 @@
+.lato-regular { /*aplicación de fuente a todas las páginas*/
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lato-bold-italic {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+/*reseteo para todas las páginas antes de empezar*/
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0;
+}
+
+/*aplicación de estilo generales en todos los doc html*/
+body {
+  font-family: "Lato", serif;
+  color: rgb(0, 0, 0);
+  background-color: rgb(242, 242, 230);
+  line-height: 1.6em;
+  font-size: 1.1em;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo {
+  max-width: 30%;
+}
+
+.menu {
+  font-weight: 700;
+  font-size: 0.85em;
+  margin: 1em 0;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  flex-direction: column;
+
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 1em;
+  margin: 1em 0;
+}
+
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a:hover {
+  color: rgb(145, 15, 56);
+}
+
+footer p a:hover {
+  color: rgb(255, 209, 176); 
+}
+
+
+.negrita {
+  font-weight: 700;
+}
+
+.italica {
+  font-style: italic;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.dots {
+  border-bottom: 1px dotted;
+  padding-bottom: 2px;
+}
+
+.dots:hover {
+  border-bottom: 1px solid;
+  padding-bottom: 2px;
+}
+
+abbr {
+  cursor: help; /*se añade cursor con signo de interr.*/
+}
+
+
+/*Estructura Grid para el main*/
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  display: block;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.banner img {
+  width: 200%;
+  display: block;
+  margin-left: -50%;
+  height: auto;
+}
+
+.banner h1, .banner p {
+  margin: 0;
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.banner p {
+  font-size: 30px;
+}
+
+.bannerTexto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -40%);
+  width: 100%;
+  text-align: center;
+  padding-right: 20%;
+}
+
+.banner figcaption {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(242, 242, 230, 0.7);
+  color: rgb(0, 0, 0);
+  padding: 0.2em 0.7em;
+  font-size: 0.7em;
+}
+
+.tituloInicio {
+  padding-top: 85px;
+  padding-bottom: 60px;
+}
+
+.parrafo {
+  padding-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input[type="text"], input[type="email"] {
+  padding: 0.7rem;
+  border: none;
+  width: 100%;
+}
+
+label {
+  margin-top: 1em;
+}
+
+div.casilla {
+  display: flex;
+  gap: 0rem;
+  flex-direction: row;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.2rem;
+  margin-top: 0em;
+}
+
+label:last-child {
+  margin-top: 0em; /*aceptación frase sin espacio arriba*/
+}
+
+.letraPequeña {
+  font-size: 0.85em;
+  margin-top: 1.5em; /*más espacio después del input y antes de la aceptación*/
+  margin-bottom: 1em;
+}
+
+button, input[type="submit"] {
+  background-color: transparent;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 120px;
+  max-width: 200px;
+  margin-top: 1em; /*mas espacio con el texto*/
+}
+
+input[type="submit"]:hover {
+  border-color: rgb(226, 115, 36);
+}
+
+fieldset {
+  border: none; /*eliminar el borde*/
+  padding: 0;   /*eliminar el padding extra*/
+}
+
+.tituloApartado {
+  padding-top: 85px;
+  padding-bottom: 60px;
+}
+
+.containerBlanco {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  padding: 2.5rem 1rem;
+  gap: 1.5rem;
+  margin-top: 55px;
+}
+
+.containerBlanco h3 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.containerBlanco h3 a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.containerBlanco:last-child {
+  margin-bottom: 9em;
+}
+
+.boton a {
+  border: 2px solid rgb(0, 0, 0);
+  padding: 0.6rem 0.9rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.boton a:hover {
+  border-color: rgb(226, 115, 36);
+}
+
+
+
+
+footer {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 0.8em;
+  padding-bottom: 65px;
+  flex-wrap: wrap;
+}
+
+
+.logoFooter {
+  max-width: 37%;
+  margin: 12px;
+  margin-top: 19px;
+}
+
+.nombre {
+  margin-bottom: 12px;
+}
+
+footer div p a {
+  color: rgb(255, 255, 255);
+}
+
+.logosFooter img:hover {
+  opacity: 0.7;
+}
+
+
+
+/*Inicio diseño página ranking*/
+.fondoVerde {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(145, 15, 56); /*Color granate*/
+  padding: 10px 15px; /*Espaciado interno*/
+  color: rgb(255, 255, 255);
+}
+
+.contenidoCentrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*Centrar horizontalmente*/
+  text-align: center; /*Centrar el texto dentro de los elementos*/
+}
+
+.tit {
+  text-align: center;
+  margin: 20px 0; /*Ajustar el espacio superior e inferior*/
+  line-height: 1.5; /*Incrementar la altura de línea para más espacio entre líneas*/
+}
+
+.tituloTema {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.listaHorizontal {
+  display: flex;
+  list-style: none; /*Eliminar los puntos de la lista*/
+  padding: 0; /*Eliminar el padding por defecto*/
+  font-size: 0.75em;
+  margin: 60px 0; /*Ajustar el margen superior e inferior de la lista*/
+  text-align: center; /*Centrar los elementos de la lista*/
+  margin-bottom: 9em;
+  margin-right: 1em;
+  margin-left: -1em;
+  justify-content: center;
+}
+
+.listaHorizontal li:not(:last-child)::after {
+  content: '·'; /*añadir el punto granate entre los elementos*/
+  color: rgb(145, 15, 56);
+  margin-left: 5px; /*Espacio después del texto antes del punto*/
+  margin-right: 5px; /*Espacio después del punto*/
+}
+
+.listaHorizontal a:hover {
+  color: rgb(145, 15, 56);
+}
+
+.tit2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+/*Contador!:*/
+.autoContador li {
+  counter-increment: section; /*Incrementa el contador por cada li!!*/
+  margin-bottom: 70px; /*espacio entre elementos de la lista*/
+  list-style-type: none;
+  font-size: 0.94em; /*tamaño fuente ligeramente más pequeña que en el resto*/
+}
+
+.autoContador h3 {
+  position: relative;
+  margin-top: 0;
+}
+
+.autoContador h3::before {
+  content: "#" counter(section); /*Contenido del contador*/
+  font-size: 1.4em; 
+  font-weight: bold;
+  display: block; /*Aparece en una línea separada*/
+  margin-bottom: 20px; /*Espacio debajo del número*/
+  margin-top: -70px;
+  justify-content: left;
+}
+
+.autoContador img {
+  display: block;
+  width: 100%; /*Asegurar que la imagen ocupe todo el ancho del contenedor*/
+  border: 18px solid rgb(255, 255, 255); /*Marco blanco alrededor de la imagen*/
+  box-sizing: border-box;
+}
+
+.autoContador figcaption {
+  margin-top: 5px; /*espacio encima del pie de imagen*/
+  margin-bottom: 1em
+}
+
+
+.articuloPrev figcaption {
+  font-size: 0.7em;
+}
+
+.articuloPrev div p {
+  font-size: 0.9em; /*un poco más pequeña*/
+  margin-bottom: 1em;
+}
+
+.masInfo {
+  margin-top: 1em;
+}
+
+.masInfo:last-of-type {
+  margin-bottom: 9em;
+}
+
+
+
+/*inicio página Blog*/
+
+.tituloBlog {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+/*Estilo general para el main con clase blog*/
+.blog {
+  padding: 2rem 0;
+}
+
+/*Estilo para los artículos dentro de .blog*/
+.articuloBlog {
+  background-color: rgb(255, 255, 255);
+  padding: 1.5rem;
+  padding-top: 0px;
+  margin-bottom: 2rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px; /*espacio entre trazas*/
+  grid-auto-rows: minmax(30px, auto); /*tamaño minimo y maximo de las cuadrículas*/
+  position: relative; /*Asegura que los elementos absolutos dentro del artículo se posicionen relativamente a este */
+}
+
+.articuloBlog figure {
+  position: relative; /*Esto permite posicionar el <figcaption> sobre la imagen*/
+  margin: 0; /*Elimina el margen predeterminado*/
+  width: calc(100% + 3rem); /*Compensa el padding del artículo (1.5rem a cada lado)*/
+  margin-left: -1.5rem; /*Mueve el figure a la izquierda para compensar el padding*/
+}
+
+.articuloBlog img {
+  width: 100%; /*Asegurar que la imagen se ajuste al contenedor */
+  display: block; /*Elimina el espacio debajo de la imagen*/
+}
+
+.articuloBlog figcaption {
+  position: absolute; /*Posiciona el <figcaption> sobre la imagen*/
+  bottom: 20px; /*en la parte inferior de la imagen */
+  right: 20px; /*a la derecha */
+  background-color: rgba(242, 242, 230, 0.7); /*semitransparente*/
+  color: rgb(0, 0, 0); 
+  padding: 0.2em 0.7em; 
+  font-size: 0.7em;
+}
+
+.titularEnlace a:hover {
+  color: rgb(145, 15, 56);
+}
+
+
+
+h3 {
+  font-size: 1.5em;
+}
+
+.autora {
+  font-size: 0.75em; /*un poco más pequeña*/
+  margin-bottom: 40px;
+}
+
+/*botones navegacion entre paginas*/
+.paginas {
+  display: flex; /*Los botones estarán en fila*/
+  gap: 10px; /*Espacio entre los botones*/
+  justify-content: center; /*Centrar los botones en la fila*/
+  margin-top: 20px; /*ajusta el espacio superior según sea necesario*/
+}
+
+.botonPagina {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+  padding: 4px 4px; /*Espacio dentro del cuadrado*/
+  font-size: 0.85em;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8em;
+}
+
+.botonPagina1 {
+  background-color: rgb(145, 15, 56); /*con color granate por ser el 1*/
+  border: 0px; /*sin borde*/
+  color: rgb(255, 255, 255); /*de color blanco en este caso*/
+  padding: 4px 4px; /* Espacio dentro del cuadrado */
+  font-size: 0.85em;
+  cursor: pointer; 
+  width: 28px;
+  height: 28px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8em;
+}
+
+.botonPagina:hover {
+  border: 2px solid rgb(145, 15, 56); /*Cambia el color del borde en hover*/  
+  background-color: rgb(145, 15, 56);
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+
+/*última pagina articulo*/
+
+/*estilo breadcrumb:*/
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 0.75em;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: rgb(0, 0, 0);
+  content: "\003E"; /*símbolo > entre enlaces!*/
+}
+
+ul.breadcrumb li a {
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: rgb(145, 15, 56);
+}
+
+
+.tituloArt {
+  font-size: 2.2em;
+  line-height: 1.3em;
+}
+
+.autoraArt {
+  margin-top: -0.8em; /*para que la autora aparezca mas cerca del título*/
+  margin-bottom: 1em;
+}
+
+.art figure {
+  position: relative; /*Esto permite posicionar el <figcaption> sobre la imagen */
+  margin: 0; /*elimina el margen predeterminado de <figure> */
+}
+
+.art img {
+  width: 200%; /*ajuste al contenedor */
+  display: block;
+  margin-left: -50%;
+  height: auto;
+  margin-bottom: 3em; /*espacio entre la imagen y el texto de abajo*/
+}
+
+
+.art figcaption {
+  position: absolute; /*<figcaption> sobre la imagen */
+  bottom: 20px; /*inferior de la imagen */
+  right: 10px; /*alinea a la derecha */
+  background-color: rgba(242, 242, 230, 0.7);
+  color: rgb(0, 0, 0);
+  padding: 0.2em 0.7em;
+  font-size: 0.7em;
+}
+
+.letraGrande {
+  font-size: 1.24em;
+  margin-bottom: 3em;
+  line-height: 1.6em;
+}
+
+.artP{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+figure iframe { /*que el video de Yt ocupe solo el ancho*/
+  width: 100%;
+}
+
+.mini {
+  font-size: 0.7em;
+}
+
+.espacio {
+  margin-top: 0.8em;
+  margin-bottom: 1em;
+}
+
+.lista {
+  margin-top: 1em;
+  margin-left: 2em;
+  font-size: 0.9em;
+}
+
+.lista li {
+  margin-bottom: 0.5em; /*espacio entre frase y frase de la lista*/
+}
+
+
+hr { /*linea que separa los apartados*/
+  width: 1000%; /* Asegura que la línea ocupe todo el ancho */
+  margin-top: 4em;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 3em;
+  border: none; /*elimina el borde predeterminado */
+  display: block; /*asegura que sea un bloque */
+  margin-inline-start: -90em; /*elimina márgenes automáticos */
+}
+
+.segundoAp {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.tituloInteresar {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.margen {
+  margin-bottom: 5em;
+}
+
+
+q {
+  quotes: "«" "»"; /*para cambiar las comillas de la cita "" por estas*/
+}
+
+
+
+
+/*Tablet: min-width 768px*/
+
+@media (min-width: 768px) {
+  /*inicio*/
+  body {
+  font-size: 18px;
+  }
+
+  .logo {
+    max-width: 25%; /*logo más chiquito*/
+  }
+
+  header, footer {
+  padding: 1.5rem;
+  }
+
+  .container {
+  padding: 0 6rem;
+  }
+
+  .banner {
+    flex-direction: row;
+  }
+
+  .banner img {
+    width: 100%; /*ocupa todo el ancho*/
+    height: 50%; /*alto de la imagen*/
+    object-fit: cover; /*ajustar la imagen manteniendo su proporción*/
+    display: block;
+    margin-left: 0;
+  }
+
+  .recuadrosBlancos {
+    display: flex; /*activa Flexbox*/
+    justify-content: space-between;
+    gap: 40px; /*espacio entre los recuadros */
+    height: auto; /*el contenedor puede ajustarse al contenido */
+  }
+
+  .containerBlanco {
+    display: flex;
+    flex-direction: column; /*elementos dentro de cada recuadro en columna */
+    flex: 1; /*cada recuadro ocupe el mismo espacio disponible */
+    margin-bottom: 2rem; /*Margen inferior entre filas*/
+    padding: 1rem; /*Espacio interior*/
+    background-color: rgb(255, 255, 255); /* Fondo blanco */
+    box-sizing: border-box; /* Asegura que padding y borde se incluyan en el ancho */
+    min-height: 300px; /* Altura mínima para los recuadros */
+    display: flex; /* Mantiene el modelo de Flexbox */
+  }
+
+  .boton {
+    margin-top: auto; /* Empuja el botón hacia el fondo */
+    margin-bottom: 20px; /* Ajusta esta distancia para forzar la separación desde el fondo */
+  }
+
+  .boton a {
+    padding: 0.6rem 0.9rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: initial; /*empuja el botón hacia el final del contenedor*/
+    margin-bottom: 20px;
+  }
+
+  .contenido-con-margen2 {
+    margin-left: -4em;  /*Ajustar el margen*/
+    margin-right: -4em;
+  }
+
+  input[type="text"], input[type="email"] {
+    width: 70%; /* más cortas*/
+  }
+  
+
+  /*Eliminar margen extra solo en el último recuadro!!*/
+  .containerBlanco:last-child {
+    margin-bottom: 1.8em;
+  }
+
+  /* Ajusta el margen entre los recuadros y el footer */
+  .recuadrosBlancos {
+    margin-bottom: 80px; 
+  }
+
+  .bannerTexto {
+    padding-right: 20%;
+  }
+
+/*Tema del mes*/
+  .contenido-con-margen-tema {
+    margin-left: -4em;
+    margin-right: -4em; 
+  }
+
+
+
+/*estilo página Blog*/
+  .entradasBlog {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*creamos dos columnas*/
+    grid-column-gap: 40px; /*ajusto espacio entre columnas*/
+    grid-row-gap: 10px; /*ajusto espacio verticalmente*/
+    justify-items: center; /* Centra las columnas en el contenedor */
+    margin-left: -4em;
+    margin-right: -4em;
+  }
+
+  .articuloBlog img {
+    padding: 0%;
+    width: 100%; /*imagen ocupe el 100% del ancho de su contenedor */
+  }
+
+
+
+/*detalles página post*/
+  .art figcaption {
+    right: -75px; /*alinear a la derecha*/
+
+  }
+
+  .art img {
+    width: 100%; 
+    object-fit: cover; 
+    display: block;
+    height: 100%; 
+    object-fit: cover; /*recorta la imagen para cubrir el contenedor */
+    object-position: center; /*centra la imagen */
+    margin-left: -20em;
+    width: 185%; /*asegura que la imagen se ajuste al contenedor*/
+  }
+
+  .containerArticulos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*creamos dos columnas*/
+    grid-column-gap: 40px; /*ajusto espacio entre columnas*/
+    grid-row-gap: 10px; /*ajusto espacio verticalmente*/
+    justify-items: center; /* Centra las columnas en el contenedor */
+    margin-left: -4em;
+    margin-right: -4em;
+  }
+
+  .no-margen {
+    margin-bottom: 4.9em;
+  }
+
+
+}
+
+
+
+
+/*Escritorio: min-width 1024px*/
+
+@media (min-width: 1024px) {
+  /*menú de navegación/header*/
+  .container-fluid {
+    display: flex;
+    justify-content: space-between; /*logo a la izquierda y el menú a la derecha */
+    align-items: center;
+  }
+
+  .logo {
+    width: auto; 
+    margin-right: auto;
+    margin-left: -9em;
+  }
+
+  .menu {
+    margin: 0; /*elimina el margen vertical para alinear mejor el menú */
+  }
+
+  .menu ul {
+    flex-direction: row;
+    align-items: center; 
+  }
+
+  .menu li {
+    margin: 0 1rem; /*Agrega espacio horizontal entre los elementos del menú*/
+  }
+
+  .menu li:not(:last-child)::after {
+    content: '     |'; /*barra separadora */
+    margin-left: 1rem; /*espacio entre el texto y la barra */
+  }
+
+  .menu a {
+    margin: 0; /*ellimina el margen vertical*/
+  }
+
+  p {
+    font-size: 0.85em;
+  }
+
+/*footer diferente en escritorio*/
+  footer .container-fluid {
+    display: flex;
+    justify-content: space-between; /*alinear las secciones a la izquierda y derecha */
+    align-items: flex-start; /*secciones al inicio verticalmente */
+    width: 100%;
+  }
+
+  /*Sección izquierda (izq)*/
+  footer .izq {
+    display: flex;
+    flex-direction: column; /* Alineamos el logo y el texto verticalmente */
+    align-items: flex-start; /* Alineamos a la izquierda */
+    margin-top: -1em;
+  }
+
+  .logoFooter {
+    max-width: 37%; /*tamaño del logo */
+    margin-bottom: 1rem; /*espacio entre el logo y el texto */
+  }
+
+  /*Sección derecha (der)*/
+  footer .der {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;
+    text-align: right; 
+  }
+
+  footer .der img {
+    margin-bottom: 1rem; /*espacio entre las imágenes */
+  }
+
+  /*Contenedor de los iconos*/
+  footer .der .logosFooter {
+    display: flex; /*alinear los iconos en una fila */
+    gap: 1rem; /*espacio entre los iconos */
+    align-items: center;
+  }
+
+
+  .logoFooter {
+    width: 500px; /*tamaño del logo*/
+    margin-bottom: 1rem;
+    margin-left: 0em;
+  }
+
+  /* Contenedor de las políticas*/
+  footer .der .politicasContainer {
+    display: flex; /*en una sola línea */
+    gap: 1rem; /*espacio entre los párrafos */
+    align-items: center; 
+  }
+
+  footer .der .politicasContainer p {
+    margin: 0;
+  }
+
+  footer .der .politicasContainer p:not(:last-child)::after {
+    content: '|'; /*separador entre los enlaces*/
+    margin-left: 1rem; /* spaciado entre el enlace y el separador*/
+  }
+
+  footer .der .politicasFooter, footer .der p {
+    margin: 0.5rem 0; /*pequeño margen entre los enlaces */
+  }
+
+
+
+  /*inicio*/
+  body {
+    font-size: 20px;
+  }
+
+  header, footer {
+    padding: 2rem;
+  }
+
+  .banner {
+    padding: 0;
+    position: relative;
+    width: 100%; 
+    height: 375px; /*anuste de altura para controlar cuánta imagen se ven*/
+    overflow: hidden;
+  }
+
+  .banner img {
+    width: 100%; /*imagen ocupa todo el ancho*/
+    height: 100%; 
+    object-fit: cover;
+    object-position: center; 
+    display: block;
+    margin-left: 0;
+  }
+
+  
+  .recuadrosBlancos {
+    display: flex;
+    justify-content: space-between; /* espacio uniforme*/
+  }
+
+  .containerBlanco {
+    flex: 0 1 calc(33.333% - 2rem); /*tres elementos por fila con espacio lateral*/
+    margin-bottom: 2rem; 
+    box-sizing: border-box; 
+    padding: 1rem; 
+    background-color: rgb(255, 255, 255); 
+  }
+
+  /* Elimina margen extra solo en el último recuadro */
+  .containerBlanco:last-child {
+    margin-bottom: 1.7em; 
+  }
+
+  input[type="text"], input[type="email"] {
+    padding: 0.7rem;
+    border: none;
+    width: 100%;
+  }
+
+  .contenido-con-margen2 {
+    margin-left: 6rem; 
+    margin-right: 6rem;
+  }
+
+  .contenedorDosColumnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+  }
+
+  .contenedorDosColumnas article {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .no-margen {
+    margin-bottom: 1.6em;
+  }
+
+  .contenedorDosColumnas form {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-top: 10.2em;
+    font-size: 0.85em;
+  }
+
+  .contenedorDosColumnas form label {
+    font-size: 0.79em;
+  }
+
+  .contenedorDosColumnas .button input {
+    border: 1px solid rgb(0, 0, 0); /*borde mas fino*/
+    padding: 0.5rem 0.5rem;
+    font-size: 0.9rem; /*letra mas pqeueña*/
+    cursor: pointer;
+  }
+
+  .button input {
+    margin-top: 1em;
+    margin-bottom: -0.5em;
+  }
+
+  .recuadrosBlancos {
+    display: flex;
+    justify-content: space-between; /*distribución de las columnas uniformemente*/
+    gap: 20px; /*Espacio entre las columnas*/
+  }
+  
+  .containerBlanco {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1; /*mismo tamaño */
+    min-height: 300px; /*altura mínima */
+    padding-bottom: 1rem; 
+  }
+  
+  .boton {
+    margin-top: 0.5em; /*reducción margen superior para acercar el botón al texto */
+  }
+
+
+
+/*Página tema del mes!:*/
+  .columnas {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    flex-wrap: wrap; /*las columnas se ajustan si no hay suficiente espacio*/
+    align-items: flex-start;
+  }
+
+  .columna {
+    flex: 1;
+    padding: 0;
+  }
+
+  .columna.lista {
+    width: 20%;
+    flex-grow: 2; /*tamaño de la primera columna */
+    margin-right: 3em;
+    margin-top: 2em;
+  }
+
+  .columna.lista ul {
+    list-style-type: none; 
+    padding: 0; 
+    font-size: 0.75rem;
+    margin: 0; 
+    text-align: left; 
+    display: block; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    margin-left: -140px;
+  }
+
+  .columna.lista li {
+    margin-bottom: -0.7rem; /*espacio entre los elementos de la lista */
+  }
+
+  .listaHorizontal li:not(:last-child)::after {
+    content: ''; /*punto granate entre los elementos */
+  }
+
+  .webTema { /*asegurar que tenga los margenes deseados a ambos lados*/
+    margin-left: 3em;
+    margin-right: -3em;
+  }
+
+
+  
+
+/*ajuste del titulo de la página*/
+  .tituloTema {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap; /* Evita el salto de línea*/
+    padding-top: 20px;
+    padding-bottom: 60px;    
+    font-size: 2.3em; /* tamaño para pantallas grandes */
+    margin-bottom: -40px;
+    margin-left: -120px;
+    display: block; 
+    text-align: center; 
+  }
+
+  .fondoColor {
+    margin-left: 10px; /*separa ligeramente el texto*/
+  }
+
+.contenidoCentrado h2 {
+  margin-left: -120px;
+  }
+
+
+/*ajuste segunda columna*/
+  .contador-y-textos {
+    margin-top: 70px;
+    white-space: nowrap; /*Impide que el texto se divida en varias líneas*/
+    font-size: 0.8em;
+    margin-left: 55px;
+    margin-top: -10em; /*espacio entre el titulo de la página y las columnas*/
+  }
+
+  .tit2 {
+    font-size: 1.5em;
+  }
+  
+
+  /*tercera columna*/
+
+  .imagen {
+    margin-left: -6em;
+    margin-top: -7.5em; /*espacio entre el titulo de la página y las columnas*/
+    margin-bottom: 6em;
+  }
+
+  .imagen img {
+    width: 75%;
+    height: auto;
+    border: 14px solid rgb(255, 255, 255); /*marco blanco mas fino*/
+  }
+
+  .imagen-y-pie figcaption {
+    margin-top: -4px; /*Espacio encima del pie de imagen*/
+    text-align: left;
+    font-size: 0.6rem;
+  }
+
+
+/*cuarta columna textoo!*/
+
+  p.texto-lateral-imagen, .masInfo {
+    margin-right: 1.7em;
+    margin-left: -95px;
+    margin-top: -8em; /*espacio entre el titulo de la página y las columnas*/
+    margin-bottom: 10em;
+  }
+
+  .articuloPrev div p {
+    font-size: 0.79em;
+    line-height: 1.7em;
+  }
+
+  .articuloPrev .columna.descpricion .masInfo {    
+    font-size: 0.7em;
+  }
+
+  .columna.descpricion {
+    display: flex;
+    flex-direction: column; /*Asegura que los elementos se apilen verticalmente*/
+    gap: 1rem; /*espacio entre  elementos*/
+    margin-top: -1em;
+  }
+  
+  .columna.descpricion .masInfo {
+    margin-top: -1.5em; /*debajo de la descripción*/
+  }
+  
+  .articuloPrev {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .articuloPrev .columna {
+    flex: 1;
+  }
+
+  .columna.lista {
+    flex-grow: 2; /*doble que las demás */
+  }
+
+  .columna {
+      flex-grow: 1;
+  }
+
+
+/*estilo página Blog*/
+  .entradasBlog {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*creamos dos columnas*/
+    grid-column-gap: 40px; /*ajusto espacio entre columnas*/
+    grid-row-gap: 10px; /*ajusto espacio verticalmente*/
+    margin-left: -2em; /*ajuste para que quede menos espacio en los margenes de los lados*/
+    margin-right: -2em;
+  }
+
+  .articuloBlog img {
+    padding: 0%;
+  }
+
+
+  /*detalles página post*/
+  .art figcaption {
+    right: -75px; /*Lo alinea a la derecha */
+
+  }
+
+  .articuloBlog h3 {
+    font-size: 1em;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 660px; 
+    height: auto;
+    margin: 0 auto; 
+  }
+
+
+
+
+/*ajustes en página post*/
+  .art figure {
+    padding: 0;
+    position: relative;
+    width: 100%; 
+    height: 375px; 
+    margin: 0;
+    margin-bottom: 3em;
+  }
+
+  
+  .art img {
+    height: 100%; /*todo el alto del contenedor */
+    object-fit: cover; /*cubrir el contenedor */
+    object-position: center; 
+    display: block;
+    margin-left: -10em;
+    width: 140%; 
+  }
+
+  .tituloArt {
+    margin-left: 0em; /*para que empiece en el inicio*/
+  }
+ 
+  h1 {
+    word-spacing: 0.2rem; 
+  }
+
+  .contenido-con-margen {
+    margin-left: 6rem;  
+    margin-right: 6rem; 
+  }
+
+
+/*artículos en cuadros blancos*/
+  .containerArticulos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales */
+    gap: 2rem; /* Espacio entre las columnas */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 0 2rem; /* Espacio horizontal dentro del contenedor */
+    align-items: stretch; /* Asegura que todos los artículos tengan la misma altura */
+    margin-left: -4.5em; /*ajuste para que quede menos espacio en los margenes de los lados*/
+    margin-right: -4.5em;
+    margin-bottom: 3em;
+  }
+
+
+
+  .segundoAp{
+    margin-left: -2em;
+  }
+
+  .containerArticulos .articuloBlog:last-child {
+    margin-bottom: 2rem; 
+  }
+
+  .containerArticulos .articuloBlog h3.tituloInteresar {
+    font-size: 0.77em; 
+    line-height: 1.3em; /*menos interlineado*/
+  }
+
+  .boton a {
+    border: 1px solid rgb(0, 0, 0); /*borde mas fino*/
+    padding: 0.6rem 0.9rem;
+    font-size: 0.75rem; /*letra mas pqeueña*/
+    cursor: pointer;
+  }
+
+  .boton {
+    margin-top: 1em;
+    margin-bottom: -0.5em;
+  }
+
+  .containerArticulos .articuloBlog figcaption {
+    font-size: 0.6rem;
+    padding: 0.2em 0.4em; /*Espaciado interno*/
+    margin-right: -1em;
+    margin-bottom: -1em;
+  }
+
+  .containerArticulos .articuloBlog figcaption {
+    line-height: 2.3; 
+  }
+}

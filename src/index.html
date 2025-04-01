@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es-es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Sara Candelario">
+    <meta name="descrption" content="Página de entrada a la página web que presenta el contenido y enlaces al resto de página de Sazón">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" 
+    rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Portada — Sazón</title>
+  </head>
+  <body>
+    <include src="src/header.html"></include>
+
+    <main>
+      <div class="container-fluid">
+        <div class="banner">
+            <div class="bannerTexto">
+                <h1>SAZÓN</h1>
+                <p>Tu blog culinario desde Canarias</p>
+            </div>
+            <figure>
+                <img
+                src="img/vistas-mar-tenerife.jpg"
+                alt="Paisaje de la costa con montañas de fondo">    
+                <figcaption>
+                    <span>Foto de <a href="https://unsplash.com/es/@luandmario" 
+                    title="Página del autor" class="dots">Maria Lupan</a> en <a href="https://unsplash.com/es/fotos/coche-blanco-que-pasa-por-la-carretera-OkuM6V9m9l0" 
+                    title="Página de origen de la imagen" class="dots">Unsplash</a></span>
+                </figcaption>
+            </figure>
+        </div>
+      </div>
+      <div class="container">
+        <div class="contenedorDosColumnas contenido-con-margen2">
+                <article>
+                    <h2 class="tituloInicio negrita">¡Te damos la bienvenida!</h2>
+                    <p class="parrafo">En <span class="negrita">Sazón</span> nos adentramos en la variada gastronomía Canaria, con el fin de 
+                    compartirla y valorarla como se merece.</p>
+                    <p class="parrafo">En nuestro apartado de <span class="negrita">Ranking Mensual</span> podrás enconrtar una lista actualizada
+                         con los mejores Restaurantes, Guachinches y locales gastronómicos del momento.</p>
+                    <p class="parrafo">Además, en nuestro apartado <span class="negrita">Blog</span> exploramos semanalmente temáticas culinarias
+                     diversas y de actualidad: recetas, tendecias gastronómicas, consejos, reviwes y mucho más.</p>
+                </article>
+
+                <form action="#" method="post">
+                  <fieldset>
+                    <legend>No te pierdas nada y <span class="negrita">suscríbete a nuestra <i lang="en">newsletter</i></span>.</legend>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre_suscriptor" required minlength="1"/>
+                    </div>
+                    <div>
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="email_suscriptor" required/>
+                    </div>
+                    <p class="letraPequeña">Antes de enviar tus datos, consulta nuestra <a href="" class="dots">política de privacidad.</a></p>
+                    <div class="casilla">
+                        <input type="checkbox" id="politica" name="politica_privacidad" value="aceptacion" required/> <!--OBLIGATORIO?!-->
+                        <label for="politica">He leído y acepto la política de privacidad<abbr title="obligatorio"></abbr></label>
+                    </div>
+                    <div class="button, boton">
+                        <input type="submit" name="suscribirse" value="Suscríbeme" onclick="">
+                    </div>
+                  </fieldset>
+                </form>
+            </div>
+            <article class="apartadoIndice contenido-con-margen2">
+                <h2 class="tituloApartado">Comparte tu experiencia con nosotros</h2>
+                <p>¿Tienes un resturante y quieres que lo conozcamos? ¿Quieres contarnos alguna experiencia?</p>
+                <p>Siéntete libre de ponerte en contacto con nosotros y <a href="mailto:contacto@sazon.com" title="Enviar correo con tu historia" class="dots">cuéntanoslo.</a></p>
+                <div class="recuadrosBlancos">
+                    <div class="containerBlanco">
+                        <h3 class="titularEnlace"><a href="">Vino: el tesoro del archipiélago</a></h3>
+                        <p>Las islas Canarias son productoras de vino con gran tradición y muy reconocidos, siendo ganadores de importantes
+                             premios internacionales por su alta calidad y presencia. Uno de los galardones...</p>
+                        <p class="boton"><a href="">Saber más</a></p>
+                    </div>
+                    <div class="containerBlanco">
+                        <h3 class="titularEnlace"><a href="">Volvamos a los mercados locales</a></h3>
+                        <p>Todos sabemos que el crecimiento de las ciudades y de las grandes superficies han hecho mella en los locales del barrio,
+                             donde solían comprar nuestros padres y abuelos. Aun así, aún permanecen...</p>
+                        <p class="boton"><a href="">Saber más</a></p>
+                    </div>
+                    <div class="containerBlanco">
+                        <h3 class="titularEnlace"><a href="">Las mejores cervezas locales artesanes</a></h3>
+                        <p>La primavera llegó, y con ella vuelven los ratos de buena compañía y cerveza fresquita. Nuestra 
+                            conocida Dorada siempre estará ahí, pero debemos conocer otras...</p>
+                        <p class="boton"><a href="">Saber más</a></p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+    
+    <include src="src/footer.html"></include>
+
+ </body>    
+</html>
