@@ -327,7 +327,7 @@ fieldset {
 
 
 footer {
-  background-color: rgb(88, 0, 28);
+  background-color: rgb(52, 7, 21);
   color: rgb(255, 255, 255);
   font-size: 0.8em;
   padding-bottom: 65px;
@@ -855,6 +855,68 @@ q {
     margin-bottom: 4.9em;
   }
 
+
+
+  /*Estilo para las fotos de los posts*/
+  .imagen-post {
+    padding: 1.5rem;
+    padding-top: 0px;
+    margin-bottom: 2rem;
+  }
+
+  .imagen-post figure {
+    position: relative; /*Esto permite posicionar el <figcaption> sobre la imagen*/
+    margin: 0; /*Elimina el margen predeterminado*/
+    width: calc(100% + 3rem); /*Compensa el padding del artículo (1.5rem a cada lado)*/
+    margin-left: -1.5rem; /*Mueve el figure a la izquierda para compensar el padding*/
+  }
+
+  .imagen-post img {
+    width: 25em;
+    object-position: center;
+    display: block;
+    margin: 0 auto; /*imagen centrada en el centro de la web*/
+  }
+
+  .imagen-post figcaption {
+    position: absolute; /*Posiciona el <figcaption> sobre la imagen*/
+    bottom: -45.7em; /*en la parte inferior de la imagen */
+    right: 37.5em; /*a la derecha */
+    background-color: rgba(242, 242, 230, 0.7); /*semitransparente*/
+    color: rgb(0, 0, 0); 
+    padding: 0.2em 0.7em; 
+    font-size: 0.7em;
+  }
+
+  .imagen-mercado-dos figcaption {
+    position: absolute;
+    bottom: -112.5em; 
+    right: 42.2em;
+    background-color: rgba(242, 242, 230, 0.7);
+    color: rgb(0, 0, 0); 
+    padding: 0.2em 0.7em; 
+    font-size: 0.7em;
+  }
+
+  .imagen-mercado-tres figcaption {
+    position: absolute;
+    bottom: -163.5em; 
+    right: 42.1em;
+    background-color: rgba(242, 242, 230, 0.7);
+    color: rgb(0, 0, 0); 
+    padding: 0.2em 0.7em; 
+    font-size: 0.7em;
+  }
+
+  .imagen-mercado-cuatro figcaption {
+    position: absolute;
+    bottom: -213.5em; 
+    right: 42.1em;
+    background-color: rgba(242, 242, 230, 0.7);
+    color: rgb(0, 0, 0); 
+    padding: 0.2em 0.7em; 
+    font-size: 0.7em;
+  }
 
 }
 
