@@ -516,6 +516,21 @@ footer div p a {
   font-size: 0.7em;
 }
 
+.imagenPost {
+  background-color: rgb(255, 255, 255);
+  padding: 0px;
+  position: relative;
+  max-width: 20em; /* Reducir el ancho máximo */
+  margin: 2em auto; /* Centrar horizontalmente */
+  text-align: center; /* Centrar el contenido dentro del contenedor */
+}
+
+.imagenPost img {
+  width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+  display: block; /* Elimina el espacio debajo de la imagen */
+}
+
+
 .titularEnlace a:hover {
   color: rgb(145, 15, 56);
 }
@@ -1405,6 +1420,8 @@ q {
     margin-left: -10em;
     width: 140%; 
   }
+
+  
 
   .tituloArt {
     margin-left: 0em; /*para que empiece en el inicio*/
