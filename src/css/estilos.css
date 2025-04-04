@@ -97,6 +97,16 @@ header {
   margin: 1em 0;
 }
 
+ul li { /*más espacio entre el listado*/
+  padding-top: 1em;
+  padding-bottom: 0.3em;
+}
+
+h3 + ul {
+  margin-top: 1.5rem;
+  margin-bottom: 3em;
+}
+
 
 a {
   color: rgb(0, 0, 0);
@@ -1143,8 +1153,21 @@ hr { /*linea que separa los apartados*/
     margin-left: -120px;
   }
 
+  .listaHorizontal {
+    margin-bottom: 1.5em;
+    justify-content: center;
+  }
+  
+  .listaHorizontal li:not(:last-child)::after {
+    content: '·'; /*añadir el punto granate entre los elementos*/
+    color: rgb(145, 15, 56);
+    margin-left: 17px; /*espacio después del texto antes del punto*/
+    margin-right: 17px; /*espacio después del punto*/
+  }
+  
 
-/*ajuste segunda columna*/
+
+/*ajuste primera columna*/
   .contador-y-textos {
     margin-top: 70px;
     white-space: nowrap;
@@ -1158,7 +1181,7 @@ hr { /*linea que separa los apartados*/
   }
   
 
-  /*tercera columna*/
+  /*segunda columna*/
   .imagen {
     margin-left: -6em;
     margin-top: -7.5em;
@@ -1178,7 +1201,7 @@ hr { /*linea que separa los apartados*/
   }
 
 
-/*cuarta columna textoo!*/
+/*ultima columna textoo!*/
   p.texto-lateral-imagen, .masInfo {
     margin-right: 1.7em;
     margin-left: -95px;
