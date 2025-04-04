@@ -293,6 +293,21 @@ fieldset {
   padding: 0;
 }
 
+
+/*para el mensaje deéxito con js*/
+#mensaje {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  display: none;
+  color: #fff;
+  background-color: #51b955; /* Verde */
+  border: 2px solid #296f2d; /* Borde verde */
+}
+
+
 .tituloApartado {
   padding-top: 85px;
   padding-bottom: 60px;
@@ -712,6 +727,16 @@ hr { /*linea que separa los apartados*/
 
   header, footer {
   padding: 1.5rem;
+  }
+
+  header { /*para hacer las esquinas redonditas*/
+    border-bottom-left-radius: 65px;
+    border-bottom-right-radius: 65px;
+  }
+
+  footer {
+    border-top-left-radius: 65px;
+    border-top-right-radius: 65px;
   }
 
   .container {
