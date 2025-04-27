@@ -35,7 +35,7 @@
 
 .container {
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 1rem; /*esto deja el margen a izq y der en todas las páginas*/
   margin: 0 auto;
 }
 
@@ -60,7 +60,7 @@ body {
 header, footer {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0;
   text-align: center;
 }
 
@@ -70,6 +70,14 @@ header {
   flex-wrap: wrap;
   background-color: rgb(255, 255, 255);
 }
+
+header .container-fluid, footer .container-fluid {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 .logo {
   max-width: 30%;
@@ -182,7 +190,7 @@ main {
 }
 
 .banner img {
-  width: 200%;
+  width: 100%;
   display: block;
   margin-left: -50%;
   height: auto;
@@ -355,7 +363,6 @@ footer {
   background-color: rgb(52, 7, 21);
   color: rgb(255, 255, 255);
   font-size: 0.8em;
-  padding-bottom: 65px;
   flex-wrap: wrap;
 }
 
@@ -644,16 +651,22 @@ ul.breadcrumb li a:hover {
 
 .art figure {
   position: relative; 
-  margin: 0;
+  width: 100vw; /* viewport width: ancho real de la pantalla */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .art img {
-  width: 200%; /*ajuste al contenedor */
+  width: 100%; /*ajuste al contenedor */
   display: block;
-  margin-left: -50%;
+  margin-left: 0;
   height: auto;
   margin-bottom: 3em; /*espacio entre la imagen y el texto de abajo*/
 }
+
 
 .art figcaption {
   position: absolute;
@@ -701,7 +714,7 @@ figure iframe { /*que el video de Yt ocupe solo el ancho*/
 
 
 hr { /*linea que separa los apartados*/
-  width: 1000%;
+  width: 90%;
   margin-top: 4em;
   height: 2px;
   background-color: rgb(0, 0, 0);
@@ -721,7 +734,7 @@ hr { /*linea que separa los apartados*/
   font-size: 18px;
   }
 
-  .logo {
+  .logo, .logoFooter { 
     max-width: 25%; /*logo más chiquito*/
   }
 
@@ -896,10 +909,9 @@ hr { /*linea que separa los apartados*/
     align-items: center;
   }
 
-  .logo {
+  .logo, .logoFooter {
     width: auto; 
     margin-right: auto;
-    margin-left: -9em;
   }
 
   .menu {
@@ -945,7 +957,7 @@ hr { /*linea que separa los apartados*/
   }
 
   .logoFooter {
-    max-width: 37%; /*tamaño del logo */
+    max-width: 20%; /*tamaño del logo */
     margin-bottom: 1rem; /*espacio entre el logo y el texto*/
   }
 
@@ -1312,10 +1324,13 @@ hr { /*linea que separa los apartados*/
 /*ajustes en página post*/
   .art figure {
     padding: 0;
-    position: relative;
-    width: 100%; 
     height: 375px; 
-    margin: 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
     margin-bottom: 3em;
   }
 
