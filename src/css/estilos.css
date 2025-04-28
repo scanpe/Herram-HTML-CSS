@@ -119,6 +119,7 @@ h3 + ul {
 a {
   color: rgb(0, 0, 0);
   text-decoration: none;
+  
 }
 
 nav ul li {
@@ -622,7 +623,8 @@ ul.breadcrumb {
 
 ul.breadcrumb li {
   display: inline;
-  font-size: 0.75em;
+  font-size: 25px; /*más grande para facilitar apretarlo (notas profe)*/
+  display: inline-block;
 }
 
 ul.breadcrumb li+li:before {
@@ -647,13 +649,14 @@ ul.breadcrumb li a:hover {
 .autoraArt {
   margin-top: -0.8em; /*para que la autora aparezca mas cerca del título*/
   margin-bottom: 1em;
+  font-size: 1.2em;
 }
 
 .art figure {
   position: relative; 
-  width: 100vw; /* viewport width: ancho real de la pantalla */
+  width: 69vw; 
   position: relative;
-  left: 50%;
+  left: 62%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
@@ -664,6 +667,7 @@ ul.breadcrumb li a:hover {
   display: block;
   margin-left: 0;
   height: auto;
+  max-height: 400px;
   margin-bottom: 3em; /*espacio entre la imagen y el texto de abajo*/
 }
 
@@ -907,11 +911,16 @@ hr { /*linea que separa los apartados*/
     display: flex;
     justify-content: space-between; /*logo a la izquierda y el menú a la derecha */
     align-items: center;
+    
   }
 
   .logo, .logoFooter {
     width: auto; 
     margin-right: auto;
+  }
+
+  .logo {
+    margin-left: -10em;
   }
 
   .menu {
@@ -1010,6 +1019,7 @@ hr { /*linea que separa los apartados*/
   /*inicio*/
   body {
     font-size: 20px;
+    overflow-x: hidden;
   }
 
   header, footer {
@@ -1324,24 +1334,22 @@ hr { /*linea que separa los apartados*/
 /*ajustes en página post*/
   .art figure {
     padding: 0;
-    height: 375px; 
-    width: 100vw;
+    height: 375px;
+    width: 100%;
     position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    margin-bottom: 3em;
+    left: auto;
+    right: auto;
+    margin: 0 auto 3em auto; /* centrado automático */
   }
 
-  
+    
   .art img {
     height: 100%;
     object-fit: cover;
-    object-position: center; 
+    object-position: center;
     display: block;
-    margin-left: -10em;
-    width: 140%; 
+    width: 136%; /*poe fiin!! no tocar, ancho de la imagen necesario*/
+    margin-left: -17.5em;
   }
 
   
