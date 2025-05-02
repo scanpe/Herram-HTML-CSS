@@ -286,6 +286,21 @@ main {
   padding-bottom: 20px;
 }
 
+.imagen-recortada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.imagen-recortada img {
+  width: 20%; 
+  height: auto;
+  margin-top: -1em;
+  margin-bottom: 1em;
+  clip-path: polygon(45% 0%, 55% 0%, 55% 60%, 70% 60%, 50% 100%, 30% 60%, 45% 60%);  
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -670,7 +685,6 @@ h3 {
 }
 
 .botonPagina:hover {
-  border: 2px solid rgb(145, 15, 56);
   background-color: rgb(145, 15, 56);
   color: rgb(255, 255, 255);
 }
@@ -851,21 +865,6 @@ hr { /*linea que separa los apartados*/
     display: block;
   }
 
-  .imagen-recortada {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-  }
-  
-  .imagen-recortada img {
-    width: 20%; 
-    height: auto;
-    margin-top: -1em;
-    margin-bottom: 1em;
-    clip-path: polygon(45% 0%, 55% 0%, 55% 60%, 70% 60%, 50% 100%, 30% 60%, 45% 60%);  
-  }
-
   .recuadrosBlancos {
     display: flex; /*activa Flexbox*/
     justify-content: space-between;
@@ -987,7 +986,7 @@ hr { /*linea que separa los apartados*/
   }
 
   .logo {
-    max-width: 15vw;
+    max-width: 7vw;
     margin-left: 1em;
   }
 
@@ -1113,7 +1112,6 @@ hr { /*linea que separa los apartados*/
     margin-left: 0;
   }
 
-  
   .recuadrosBlancos {
     display: flex;
     justify-content: space-between; /*espacio uniforme*/
@@ -1198,6 +1196,9 @@ hr { /*linea que separa los apartados*/
     margin-top: 0.5em;
   }
 
+  .imagen-recortada img {
+    width: 9%; 
+  
 
 
 /*página rest. mejor valorados*/
@@ -1457,5 +1458,6 @@ hr { /*linea que separa los apartados*/
     margin-top: 1em;
     margin-bottom: -0.5em;
   }
+}
 }
 }
