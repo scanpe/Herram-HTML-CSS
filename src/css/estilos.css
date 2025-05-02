@@ -1198,6 +1198,7 @@ hr { /*linea que separa los apartados*/
 
   .imagen-recortada img {
     width: 9%; 
+  }
   
 
 
@@ -1458,6 +1459,5 @@ hr { /*linea que separa los apartados*/
     margin-top: 1em;
     margin-bottom: -0.5em;
   }
-}
-}
+  }
 }
