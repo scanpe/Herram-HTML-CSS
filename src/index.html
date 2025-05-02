@@ -2,13 +2,14 @@
 <html lang="es-es">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sara Candelario">
     <meta name="descrption" content="Página de entrada a la página web que presenta el contenido y enlaces al resto de página de Sazón">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" 
     rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Portada — Sazón</title>
   </head>
@@ -22,10 +23,15 @@
                 <h1>SAZÓN</h1>
                 <p>Tu blog culinario desde Canarias</p>
             </div>
-            <figure>
+            <figure>  <!-- ejemplo uso de srcset y sizes como técn. respons. -->
                 <img
-                src="img/vistas-mar-tenerife.jpg"
-                alt="Paisaje de la costa con montañas de fondo">    
+                src="img/vistas-mar-tenerife-medium.webp"
+                srcset=
+                "img/vistas-mar-tenerife-small.webp 480w,
+                  img/vistas-mar-tenerife-medium.webp 768w,
+                  img/vistas-mar-tenerife-large.webp 1200w"
+                alt="Paisaje de la costa con montañas de fondo">
+    
                 <figcaption>
                     <span>Foto de <a href="https://unsplash.com/es/@luandmario" 
                     title="Página del autor" class="dots">Maria Lupan</a> en <a href="https://unsplash.com/es/fotos/coche-blanco-que-pasa-por-la-carretera-OkuM6V9m9l0" 
@@ -35,6 +41,10 @@
         </div>
       </div>
       <div class="container">
+        <div class="icono-cubiertos">
+            <img src="img/cubiertos.svg" alt="Icono Bienvenida" class="icono-bienvenida-img">
+        </div>
+
         <div class="contenedorDosColumnas contenido-con-margen2">
                 <article>
                     <h2 class="tituloInicio negrita">¡Te damos la bienvenida!</h2>
@@ -71,6 +81,15 @@
             </div>
             <article class="apartadoIndice contenido-con-margen2">
                 <h2 class="tituloApartado">Comparte tu experiencia con nosotros</h2>
+                
+                <div class="imagen-recortada">
+                    <img src="img/vino-medium.webp"
+                         srcset="img/vino-small.webp 480w,
+                                img/vino-medium.webp 768w,
+                                img/vino-large.webp 1200w"
+                         alt="Copa de vino tinto frente a un viñedo">
+                </div>
+                
                 <p>¿Tienes un restaurante y quieres que lo conozcamos? ¿Quieres contarnos alguna experiencia?</p>
                 <p>Siéntete libre de ponerte en contacto con nosotros y <a href="mailto:contacto@sazon.com" title="Enviar correo con tu historia" class="dots">cuéntanoslo.</a></p>
                 <div class="recuadrosBlancos">

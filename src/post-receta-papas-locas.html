@@ -2,13 +2,14 @@
 <html lang="es-es">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sara Candelario">
     <meta name="descrption" content="Post del artículo Papas locas versión vegana de la página web Sazón">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" 
     rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Papas locas versión vegana — Sazón</title>
   </head>
@@ -27,8 +28,12 @@
             <p class="autoraArt contenido-con-margen">Escrito por Lourdes Expósito — 4 de abril de 2025</p>
             <figure>
                 <img
-                src="img/papas-fritas.jpg"
-                alt="Papas fritas">    
+                src="img/papas-fritas-medium.webp"
+                srcset=
+                "img/papas-fritas-small.webp 480w,
+                img/papas-fritas-medium.webp 768w,
+                img/papas-fritas-large.webp 1200w"
+                alt="Papas fritas">      
                 <figcaption>
                     <span>Imagen de <a href="https://unsplash.com/es/@fermtz05" title="Página de usuario de Fernanda Martinez" 
                         class="dots">Fernanda Martinez</a> en <a href="https://unsplash.com/es/fotos/papas-fritas-marrones-en-plato-de-ceramica-blanca-Lbu6luIw3g8" class="dots" 
@@ -47,8 +52,13 @@
             </p>
             <div class="articuloBlog imagenPost">
                 <figure>
-                    <img src="img/papas-locas1.jpg" alt="Plato de papas locas">
-                    <figcaption>
+                    <picture>
+                        <source srcset="img/papas-locas1-mobile.webp" media="(max-width: 767px)" type="image/webp">
+                        <source srcset="img/papas-locas1-tablet.webp" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp">
+                        <source srcset="img/papas-locas1-desktop.webp" media="(min-width: 1024px)" type="image/webp">
+                    
+                        <img src="img/papas-locas1.jpg" alt="Plato de papas locas">
+                    </picture>                    <figcaption>
                         <span>Imagen de <a href="https://www.youtube.com/@LivingLikeAPanda" title="Página de usuario de Living like a panda en Youtube" 
                             class="dots"><i lang="en">Living like a panda</i></a> en <a href="https://www.youtube.com/watch?v=Z7ATHr5Khyk" 
                         title="Página de Youtube" class="dots">YouTube</a></span>
@@ -96,7 +106,12 @@
                      el orégano y la sal.</li>
                 <div class="articuloBlog imagenPost">
                     <figure>
-                        <img src="img/papas-cortadas.jpg" alt="Papas cortadas en tiras">
+                        <picture>
+                            <source srcset="img/papas-cortadas-mobile.webp" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="img/papas-cortadas-tablet.webp" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp">
+                            <source srcset="img/papas-cortadas-desktop.webp" media="(min-width: 1024px)" type="image/webp">
+                            <img src="img/papas-cortadas.jpg" alt="Papas cortadas en tiras">
+                        </picture>
                         <figcaption>
                             <span>Foto de <a href="https://pixabay.com/users/boguslawbyrski-416814/" title="Página de usuario de Bogusław Byrski en Pixabay" class="dots">Bogusław Byrski</a> 
                             en <a href="https://pixabay.com/photos/potato-french-fries-vegetables-436870/" title="Página de origen de la foto en Pixabay" 
@@ -109,7 +124,12 @@
                     en la freidora o en sartén, según tu preferencia.</li>
                 <div class="articuloBlog imagenPost">
                     <figure>
-                        <img src="img/papas-horno.jpg" alt="Papas cocinadas en una bandeja de horno">
+                        <picture>
+                            <source srcset="img/papas-horno-mobile.webp" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="img/papas-horno-tablet.webp" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp">
+                            <source srcset="img/papas-horno-desktop.webp" media="(min-width: 1024px)" type="image/webp">
+                            <img src="img/papas-horno.jpg" alt="Papas cocinadas en una bandeja de horno">
+                        </picture>
                         <figcaption>
                             <span>Foto de <a href="https://unsplash.com/es/@cristiursea" title="Página de usuario de Cristi Ursea en Unsplash" class="dots">Cristi Ursea</a> 
                             en <a href="https://unsplash.com/es/fotos/una-sarten-llena-de-papas-fritas-encima-de-una-mesa-TrkTB3hhv4w" title="Página de origen de la foto en Unsplash" 
@@ -123,7 +143,12 @@
                     un poquito más de agua para que no se pegue a la sartén.</li>
                 <div class="articuloBlog imagenPost">
                     <figure>
-                        <img src="img/cebolla-sarten.jpg" alt="Sal cayendo a una sartén con cebolla cortada">
+                        <picture>
+                            <source srcset="img/cebolla-sarten-mobile.webp" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="img/cebolla-sarten-tablet.webp" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp">
+                            <source srcset="img/cebolla-sarten-desktop.webp" media="(min-width: 1024px)" type="image/webp">
+                            <img src="img/cebolla-sarten.jpg" alt="Sal cayendo a una sartén con cebolla cortada">
+                        </picture>
                         <figcaption>
                             <span>Foto de <a href="https://unsplash.com/es/@filipp_roman_photography" title="Página de usuario de Filipp Romanovski en Unsplash" class="dots">Filipp Romanovski</a> 
                             en <a href="https://unsplash.com/es/fotos/una-persona-cocinando-cebollas-en-una-sarten-con-una-cuchara-V5SfxRtuiqY" title="Página de origen de la foto en Unsplash" 
@@ -135,7 +160,12 @@
                 <li>Tras mezclar bien, añadimos el tomate triturado y medio vasito de agua y lo dejamos a fuego 15 minutos.</li>
                 <div class="articuloBlog imagenPost">
                     <figure>
-                        <img src="img/sarten-ingredientes.jpg" alt="Ingredientes en una sartén cocinándose">
+                        <picture>
+                            <source srcset="img/sarten-ingredientes-mobile.webp" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="img/sarten-ingredientes-tablet.webp" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp">
+                            <source srcset="img/sarten-ingredientes-desktop.webp" media="(min-width: 1024px)" type="image/webp">
+                            <img src="img/sarten-ingredientes.jpg" alt="Ingredientes en una sartén cocinándose">
+                        </picture>
                         <figcaption>
                             <span>Foto de <a href="https://unsplash.com/es/@zoshuacolah" title="Página de usuario de Zoshua Colah en Unsplash" class="dots">Zoshua Colah</a> 
                             en <a href="https://unsplash.com/es/fotos/los-tomates-y-las-especias-se-cocinan-en-una-sarten-0QhyO1giNgA" title="Página de origen de la foto en Unsplash" 

@@ -2,13 +2,14 @@
 <html lang="es-es">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sara Candelario">
     <meta name="descrption" content="Post del artículo Papas locas versión vegana de la página web Sazón">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" 
     rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Volvamos a los mercados locales — Sazón</title>
   </head>
@@ -27,7 +28,11 @@
             <p class="autoraArt contenido-con-margen">Escrito por Ithaisa Gorrín — 28 de marzo de 2025</p>
             <figure>
                 <img
-                src="img/mercado-expuesto.jpg"
+                src="img/mercado-expuesto-medium.webp"
+                srcset=
+                "img/mercado-expuesto-small.webp 480w,
+                img/mercado-expuesto-medium.webp 768w,
+                img/mercado-expuesto-large.webp 1200w"
                 alt="Verduras expuestas en un mercado">    
                 <figcaption>
                     <span>Imagen de <a href="https://unsplash.com/es/@thomasble" title="Página de usuario de Thomas Le" 
@@ -48,7 +53,12 @@
 
                 <div class="articuloBlog imagenPost">
                     <figure>
-                        <img src="img/mercado.jpg" alt="Entrada Mercado la Recova en Santa Cruz de Tenerife">
+                        <picture>
+                            <source srcset="img/mercado-mobile.webp" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="img/mercado-tablet.webp" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp">
+                            <source srcset="img/mercado-desktop.webp" media="(min-width: 1024px)" type="image/webp">
+                            <img src="img/mercado.jpg" alt="Entrada Mercado la Recova en Santa Cruz de Tenerife">
+                        </picture>
                         <figcaption>
                             <span>Foto de <a href="https://www.facebook.com/AmigosdelaRecova" title="Página de usuario de Amigos de la Recova en Facebook" class="dots">Amigos de la Recova</a> 
                             en <a href="https://www.facebook.com/photo/?fbid=684100313747805&set=a.557298586427979" title="Página de origen de la foto en Facebook" 
@@ -70,7 +80,12 @@
                     que tenemos de grandes corporaciones y empresas.</p><br>
                 <div class="articuloBlog imagenPost">
                     <figure>
-                        <img src="img/compra-mercado.jpg" alt="Persona pagando en un estante de fruta de un mercado">
+                        <picture>
+                            <source srcset="img/compra-mercado-mobile.webp" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="img/compra-mercado-tablet.webp" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp">
+                            <source srcset="img/compra-mercado-desktop.webp" media="(min-width: 1024px)" type="image/webp">
+                            <img src="img/compra-mercado.jpg" alt="Persona pagando en un estante de fruta de un mercado">
+                        </picture>
                         <figcaption>
                             <span>Foto de <a href="https://unsplash.com/es/@alainpictures" title="Página de usuario de Alain Gehri en Unsplash" class="dots">Alain Gehri</a> 
                             en <a href="https://unsplash.com/es/fotos/un-manojo-de-platanos-colgando-de-un-techo-8TI5qFlEy_M" title="Página de origen de la foto en Unsplash" 
@@ -88,7 +103,12 @@
                     y lo más cercanos posible. Además, en los mercados suelen utilizar menos envases plásticos y promueven el uso de bolsas reutilizables.</p><br>
                 <div class="articuloBlog imagenPost">
                     <figure>
-                        <img src="img/caja-carton-verdura.jpg" alt="Persona sosteniendo una caja de cartón con verdura">
+                        <picture>
+                            <source srcset="img/caja-carton-verdura-mobile.webp" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="img/caja-carton-verdura-tablet.webp" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp">
+                            <source srcset="img/caja-carton-verdura-desktop.webp" media="(min-width: 1024px)" type="image/webp">
+                            <img src="img/caja-carton-verdura.jpg" alt="Persona sosteniendo una caja de cartón con verdura">
+                        </picture>
                         <figcaption>
                             <span>Foto de <a href="https://unsplash.com/es/@allvar" title="Página de usuario de Carl Tronders en Unsplash" class="dots">Carl Tronders</a> 
                             en <a href="https://unsplash.com/es/fotos/un-hombre-sosteniendo-una-caja-de-carton-llena-de-verduras-M4mJQPaIjnk" title="Página de origen de la foto en Unsplash" 
@@ -106,7 +126,12 @@
                     autóctonas con las que poder realizar recetas tradicionales que difícilmente encontrarías en supermercados.</p><br>
                 <div class="articuloBlog imagenPost">
                     <figure>
-                        <img src="img/higo-pico.jpg" alt="Fruto de higo pico en el cactus">
+                        <picture>
+                            <source srcset="img/higo-pico-mobile.webp" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="img/higo-pico-tablet.webp" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp">
+                            <source srcset="img/higo-pico-desktop.webp" media="(min-width: 1024px)" type="image/webp">
+                            <img src="img/higo-pico.jpg" alt="Fruto de higo pico en el cactus">
+                        </picture>
                         <figcaption>
                             <span>Foto de <a href="https://unsplash.com/es/@epicuros" title="Página de usuario de Vasilis Caravitis en Unsplash" class="dots">Vasilis Caravitis</a> 
                             en <a href="https://unsplash.com/es/fotos/un-primer-plano-de-un-cactus-con-fruta-LEoQhk89zjw" title="Página de origen de la foto en Unsplash" 
